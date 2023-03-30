@@ -37,6 +37,7 @@ class APIClient {
     }
 }
 
+
 //func login(model: LogInModel, responseLogIn: @escaping (_ data: Data?) -> Void) {
 //    let urlString = "\(ApiConstants.basePath)\(ApiConstants.URLEndpoint.login)"
 //

@@ -1,0 +1,131 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+pod “Alamofire”
+
+target 'abseil' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for abseil
+
+end
+
+target 'BoringSSL-GRPC' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for BoringSSL-GRPC
+
+end
+
+target 'FirebaseCore' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for FirebaseCore
+
+end
+
+target 'FirebaseCoreInternal' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for FirebaseCoreInternal
+
+end
+
+target 'FirebaseFirestore' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for FirebaseFirestore
+
+end
+
+target 'GoogleUtilities' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for GoogleUtilities
+
+end
+
+target 'gRPC-C++' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for gRPC-C++
+
+end
+
+target 'gRPC-C++-gRPCCertificates-Cpp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for gRPC-C++-gRPCCertificates-Cpp
+
+end
+
+target 'gRPC-Core' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for gRPC-Core
+
+end
+
+target 'leveldb-library' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for leveldb-library
+
+end
+
+target 'Libuv-gRPC' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Libuv-gRPC
+
+end
+
+target 'nanopb' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for nanopb
+
+end
+
+target 'Pods-prototypeapp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Pods-prototypeapp
+
+end
+
+target 'Pods-prototypeapp-prototypeappUITests' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Pods-prototypeapp-prototypeappUITests
+
+end
+
+target 'Pods-prototypeappTests' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Pods-prototypeappTests
+
+end
+
+target 'PromisesObjC' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for PromisesObjC
+
+end

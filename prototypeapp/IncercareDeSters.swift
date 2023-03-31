@@ -544,9 +544,9 @@ IHealth  API
 //mail:
 //  type: smtp
 //  sender:
-//    id: internal@zynksoftware.com
+//    id: internal@CvSoftware.com
 //    password: qccM3Jn3tfVPGDZY
-//    personal: Zynk Software
+//    personal: CV Software
 //  smtp:
 //    host: smtp.gmail.com
 //    port: 587

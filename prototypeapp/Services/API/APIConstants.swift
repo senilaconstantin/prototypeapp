@@ -8,7 +8,7 @@
 import Foundation
 
 class ApiConstants {
-    static let basePath = "http://192.168.1.248:8081" 
+    static let basePath = "http://192.168.1.246:8081" 
     
     enum HttpMethod: String {
         case GET

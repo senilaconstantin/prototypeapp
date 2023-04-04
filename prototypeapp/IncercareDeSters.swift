@@ -150,7 +150,7 @@
 
 
 //
-IHealth  API
+//IHealth  API
 
        /// Call getClinics
 //        getClinics(token: token) { dataR in

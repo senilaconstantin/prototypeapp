@@ -12,7 +12,6 @@
 		7D3F919929BFC181005FCA56 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F919829BFC181005FCA56 /* APIConstants.swift */; };
 		7D3F919B29BFC1D7005FCA56 /* LogInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F919A29BFC1D7005FCA56 /* LogInModel.swift */; };
 		7D3F91A029BFC546005FCA56 /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F919F29BFC546005FCA56 /* TokenModel.swift */; };
-		7D3F91A329C0C59F005FCA56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D3F91A229C0C59F005FCA56 /* LaunchScreen.storyboard */; };
 		7D3F91A729C10A01005FCA56 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F91A629C10A01005FCA56 /* SplashScreen.swift */; };
 		7D3F91A929C10A1B005FCA56 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F91A829C10A1B005FCA56 /* SplashView.swift */; };
 		7D3F91AB29C10A55005FCA56 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F91AA29C10A55005FCA56 /* SplashViewModel.swift */; };
@@ -30,13 +29,18 @@
 		7DE5898B29D6A3BA0075ECC7 /* IncercareDeSters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5898A29D6A3BA0075ECC7 /* IncercareDeSters.swift */; };
 		84E7A0DDEC1462E83A63F209 /* Pods_prototypeapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A82139888FCD58778479F36A /* Pods_prototypeapp.framework */; };
 		CABBB35D8A4437BA3884F181 /* Pods_prototypeapp_prototypeappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B914F88DC8E370126FCA9691 /* Pods_prototypeapp_prototypeappUITests.framework */; };
-		F553867929DCC273006EC47A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F553867829DCC273006EC47A /* Assets.xcassets */; };
 		F553867C29DCC596006EC47A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = F553867B29DCC596006EC47A /* Font.swift */; };
 		F55386AD29DCCF32006EC47A /* CardTextViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55386AC29DCCF32006EC47A /* CardTextViewModifier.swift */; };
 		F55386AE29DCCF32006EC47A /* CardTextViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55386AC29DCCF32006EC47A /* CardTextViewModifier.swift */; };
 		F55386AF29DCCF32006EC47A /* CardTextViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55386AC29DCCF32006EC47A /* CardTextViewModifier.swift */; };
 		F55386B729DCD9C6006EC47A /* Fasthand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F55386B629DCD9C6006EC47A /* Fasthand-Regular.ttf */; };
 		F55386B929DCDC17006EC47A /* Times New Romance.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F55386B829DCDC16006EC47A /* Times New Romance.ttf */; };
+		F56EA92429DE222900E66493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56EA92329DE222800E66493 /* Assets.xcassets */; };
+		F56EA92529DE222900E66493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56EA92329DE222800E66493 /* Assets.xcassets */; };
+		F56EA92629DE222900E66493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56EA92329DE222800E66493 /* Assets.xcassets */; };
+		F5E927D829DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */; };
+		F5E927D929DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */; };
+		F5E927DA29DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +68,6 @@
 		7D3F919829BFC181005FCA56 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		7D3F919A29BFC1D7005FCA56 /* LogInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInModel.swift; sourceTree = "<group>"; };
 		7D3F919F29BFC546005FCA56 /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
-		7D3F91A229C0C59F005FCA56 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D3F91A629C10A01005FCA56 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		7D3F91A829C10A1B005FCA56 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		7D3F91AA29C10A55005FCA56 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
@@ -89,11 +92,12 @@
 		A82139888FCD58778479F36A /* Pods_prototypeapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_prototypeapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B914F88DC8E370126FCA9691 /* Pods_prototypeapp_prototypeappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_prototypeapp_prototypeappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE33F759948AEEEA48C1382A /* Pods_prototypeappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_prototypeappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F553867829DCC273006EC47A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../.Trash/prototyApp-iOSv/prototypeapp/prototypeapp/Assets.xcassets"; sourceTree = "<group>"; };
 		F553867B29DCC596006EC47A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		F55386AC29DCCF32006EC47A /* CardTextViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTextViewModifier.swift; sourceTree = "<group>"; };
 		F55386B629DCD9C6006EC47A /* Fasthand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fasthand-Regular.ttf"; sourceTree = "<group>"; };
 		F55386B829DCDC16006EC47A /* Times New Romance.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Times New Romance.ttf"; path = "../../../../../Downloads/times_new_romance2/Times New Romance.ttf"; sourceTree = "<group>"; };
+		F56EA92329DE222800E66493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,7 +171,7 @@
 		7D3F91A129C0C55C005FCA56 /* SplashStoryboards */ = {
 			isa = PBXGroup;
 			children = (
-				7D3F91A229C0C59F005FCA56 /* LaunchScreen.storyboard */,
+				F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */,
 			);
 			path = SplashStoryboards;
 			sourceTree = "<group>";
@@ -261,8 +265,8 @@
 		7D60CACE29642BB000CE38A3 /* Content */ = {
 			isa = PBXGroup;
 			children = (
-				F553867829DCC273006EC47A /* Assets.xcassets */,
 				7D60CAF229642FB100CE38A3 /* GoogleService-Info.plist */,
+				F56EA92329DE222800E66493 /* Assets.xcassets */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -430,8 +434,8 @@
 			files = (
 				F55386B729DCD9C6006EC47A /* Fasthand-Regular.ttf in Resources */,
 				F55386B929DCDC17006EC47A /* Times New Romance.ttf in Resources */,
-				7D3F91A329C0C59F005FCA56 /* LaunchScreen.storyboard in Resources */,
-				F553867929DCC273006EC47A /* Assets.xcassets in Resources */,
+				F56EA92429DE222900E66493 /* Assets.xcassets in Resources */,
+				F5E927D829DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */,
 				7D60CAF329642FB100CE38A3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +444,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F56EA92529DE222900E66493 /* Assets.xcassets in Resources */,
+				F5E927D929DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +453,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F56EA92629DE222900E66493 /* Assets.xcassets in Resources */,
+				F5E927DA29DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,13 +744,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"prototypeapp/Content\"";
 				DEVELOPMENT_TEAM = G72BPQSG2L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = prototypeApp;
+				INFOPLIST_KEY_CFBundleDisplayName = "Health&Sports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -755,8 +764,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = senilaconstantin.prototypeapp;
+				PRODUCT_BUNDLE_IDENTIFIER = senilaconstantin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -770,13 +780,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"prototypeapp/Content\"";
 				DEVELOPMENT_TEAM = G72BPQSG2L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = prototypeApp;
+				INFOPLIST_KEY_CFBundleDisplayName = "Health&Sports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -789,8 +800,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = senilaconstantin.prototypeapp;
+				PRODUCT_BUNDLE_IDENTIFIER = senilaconstantin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

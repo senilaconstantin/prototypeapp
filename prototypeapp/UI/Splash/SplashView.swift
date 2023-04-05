@@ -17,7 +17,7 @@ struct SplashView: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(width: geometry.size.width, height: geometry.size.height)
             }
-            //--
+            //---
             VStack(alignment: .center) {
                 Text("FitPlan")
                     .cardTextStyle(font: Font.timesNewRomanBold35(), color: Color.white)

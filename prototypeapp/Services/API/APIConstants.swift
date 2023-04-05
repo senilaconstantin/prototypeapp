@@ -16,7 +16,6 @@ class ApiConstants {
         case DELETE
         case PUT
     }
-    
     enum URLEndpoint {
         static let login = "/api/v1/auth/authenticate"
     }

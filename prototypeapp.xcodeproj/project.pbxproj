@@ -23,8 +23,6 @@
 		7D3F91C729C74954005FCA56 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3F91C629C74954005FCA56 /* CurrentUser.swift */; };
 		7D60CAC929642BAF00CE38A3 /* prototypeappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D60CAC829642BAF00CE38A3 /* prototypeappApp.swift */; };
 		7D60CACB29642BAF00CE38A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D60CACA29642BAF00CE38A3 /* ContentView.swift */; };
-		7D60CACD29642BB000CE38A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D60CACC29642BB000CE38A3 /* Assets.xcassets */; };
-		7D60CAD029642BB000CE38A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D60CACF29642BB000CE38A3 /* Preview Assets.xcassets */; };
 		7D60CADA29642BB000CE38A3 /* prototypeappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D60CAD929642BB000CE38A3 /* prototypeappTests.swift */; };
 		7D60CAE429642BB000CE38A3 /* prototypeappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D60CAE329642BB000CE38A3 /* prototypeappUITests.swift */; };
 		7D60CAE629642BB000CE38A3 /* prototypeappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D60CAE529642BB000CE38A3 /* prototypeappUITestsLaunchTests.swift */; };
@@ -32,6 +30,13 @@
 		7DE5898B29D6A3BA0075ECC7 /* IncercareDeSters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5898A29D6A3BA0075ECC7 /* IncercareDeSters.swift */; };
 		84E7A0DDEC1462E83A63F209 /* Pods_prototypeapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A82139888FCD58778479F36A /* Pods_prototypeapp.framework */; };
 		CABBB35D8A4437BA3884F181 /* Pods_prototypeapp_prototypeappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B914F88DC8E370126FCA9691 /* Pods_prototypeapp_prototypeappUITests.framework */; };
+		F553867929DCC273006EC47A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F553867829DCC273006EC47A /* Assets.xcassets */; };
+		F553867C29DCC596006EC47A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = F553867B29DCC596006EC47A /* Font.swift */; };
+		F55386AD29DCCF32006EC47A /* CardTextViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55386AC29DCCF32006EC47A /* CardTextViewModifier.swift */; };
+		F55386AE29DCCF32006EC47A /* CardTextViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55386AC29DCCF32006EC47A /* CardTextViewModifier.swift */; };
+		F55386AF29DCCF32006EC47A /* CardTextViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55386AC29DCCF32006EC47A /* CardTextViewModifier.swift */; };
+		F55386B729DCD9C6006EC47A /* Fasthand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F55386B629DCD9C6006EC47A /* Fasthand-Regular.ttf */; };
+		F55386B929DCDC17006EC47A /* Times New Romance.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F55386B829DCDC16006EC47A /* Times New Romance.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +76,6 @@
 		7D60CAC529642BAF00CE38A3 /* prototypeapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prototypeapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D60CAC829642BAF00CE38A3 /* prototypeappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prototypeappApp.swift; sourceTree = "<group>"; };
 		7D60CACA29642BAF00CE38A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7D60CACC29642BB000CE38A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7D60CACF29642BB000CE38A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7D60CAD529642BB000CE38A3 /* prototypeappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = prototypeappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D60CAD929642BB000CE38A3 /* prototypeappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prototypeappTests.swift; sourceTree = "<group>"; };
 		7D60CADF29642BB000CE38A3 /* prototypeappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = prototypeappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +89,11 @@
 		A82139888FCD58778479F36A /* Pods_prototypeapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_prototypeapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B914F88DC8E370126FCA9691 /* Pods_prototypeapp_prototypeappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_prototypeapp_prototypeappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE33F759948AEEEA48C1382A /* Pods_prototypeappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_prototypeappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F553867829DCC273006EC47A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../.Trash/prototyApp-iOSv/prototypeapp/prototypeapp/Assets.xcassets"; sourceTree = "<group>"; };
+		F553867B29DCC596006EC47A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		F55386AC29DCCF32006EC47A /* CardTextViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTextViewModifier.swift; sourceTree = "<group>"; };
+		F55386B629DCD9C6006EC47A /* Fasthand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fasthand-Regular.ttf"; sourceTree = "<group>"; };
+		F55386B829DCDC16006EC47A /* Times New Romance.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Times New Romance.ttf"; path = "../../../../../Downloads/times_new_romance2/Times New Romance.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +175,7 @@
 		7D3F91A429C0DB04005FCA56 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F55386AB29DCCF14006EC47A /* ViewModifiers */,
 				7D3F91BE29C73A11005FCA56 /* Base */,
 				7D3F91BB29C73825005FCA56 /* Dashboard */,
 				7D3F91A529C0DB0C005FCA56 /* Splash */,
@@ -235,26 +244,27 @@
 		7D60CAC729642BAF00CE38A3 /* prototypeapp */ = {
 			isa = PBXGroup;
 			children = (
+				F553867D29DCC9DB006EC47A /* Fonts */,
+				F553867A29DCC56C006EC47A /* Extension */,
 				7D3F91C529C748FE005FCA56 /* Utils */,
 				7D3F91A429C0DB04005FCA56 /* UI */,
 				7D3F91A129C0C55C005FCA56 /* SplashStoryboards */,
 				7D3F919329BFC05A005FCA56 /* Services */,
 				7D60CAC829642BAF00CE38A3 /* prototypeappApp.swift */,
 				7D60CACA29642BAF00CE38A3 /* ContentView.swift */,
-				7D60CACC29642BB000CE38A3 /* Assets.xcassets */,
-				7D60CAF229642FB100CE38A3 /* GoogleService-Info.plist */,
-				7D60CACE29642BB000CE38A3 /* Preview Content */,
+				7D60CACE29642BB000CE38A3 /* Content */,
 				7DE5898A29D6A3BA0075ECC7 /* IncercareDeSters.swift */,
 			);
 			path = prototypeapp;
 			sourceTree = "<group>";
 		};
-		7D60CACE29642BB000CE38A3 /* Preview Content */ = {
+		7D60CACE29642BB000CE38A3 /* Content */ = {
 			isa = PBXGroup;
 			children = (
-				7D60CACF29642BB000CE38A3 /* Preview Assets.xcassets */,
+				F553867829DCC273006EC47A /* Assets.xcassets */,
+				7D60CAF229642FB100CE38A3 /* GoogleService-Info.plist */,
 			);
-			path = "Preview Content";
+			path = Content;
 			sourceTree = "<group>";
 		};
 		7D60CAD829642BB000CE38A3 /* prototypeappTests */ = {
@@ -282,6 +292,31 @@
 				BE33F759948AEEEA48C1382A /* Pods_prototypeappTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F553867A29DCC56C006EC47A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F553867B29DCC596006EC47A /* Font.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F553867D29DCC9DB006EC47A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F55386B829DCDC16006EC47A /* Times New Romance.ttf */,
+				F55386B629DCD9C6006EC47A /* Fasthand-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F55386AB29DCCF14006EC47A /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F55386AC29DCCF32006EC47A /* CardTextViewModifier.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,9 +428,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D60CAD029642BB000CE38A3 /* Preview Assets.xcassets in Resources */,
+				F55386B729DCD9C6006EC47A /* Fasthand-Regular.ttf in Resources */,
+				F55386B929DCDC17006EC47A /* Times New Romance.ttf in Resources */,
 				7D3F91A329C0C59F005FCA56 /* LaunchScreen.storyboard in Resources */,
-				7D60CACD29642BB000CE38A3 /* Assets.xcassets in Resources */,
+				F553867929DCC273006EC47A /* Assets.xcassets in Resources */,
 				7D60CAF329642FB100CE38A3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,6 +572,8 @@
 				7D60CAC929642BAF00CE38A3 /* prototypeappApp.swift in Sources */,
 				7D3F91BD29C73849005FCA56 /* DashboardView.swift in Sources */,
 				7DE5898B29D6A3BA0075ECC7 /* IncercareDeSters.swift in Sources */,
+				F55386AD29DCCF32006EC47A /* CardTextViewModifier.swift in Sources */,
+				F553867C29DCC596006EC47A /* Font.swift in Sources */,
 				7D3F919629BFC0A5005FCA56 /* APIClient.swift in Sources */,
 				7D3F91C729C74954005FCA56 /* CurrentUser.swift in Sources */,
 				7D3F91A929C10A1B005FCA56 /* SplashView.swift in Sources */,
@@ -547,6 +585,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D60CADA29642BB000CE38A3 /* prototypeappTests.swift in Sources */,
+				F55386AE29DCCF32006EC47A /* CardTextViewModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +595,7 @@
 			files = (
 				7D60CAE429642BB000CE38A3 /* prototypeappUITests.swift in Sources */,
 				7D60CAE629642BB000CE38A3 /* prototypeappUITestsLaunchTests.swift in Sources */,
+				F55386AF29DCCF32006EC47A /* CardTextViewModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,7 +738,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"prototypeapp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"prototypeapp/Content\"";
 				DEVELOPMENT_TEAM = G72BPQSG2L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -732,7 +772,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"prototypeapp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"prototypeapp/Content\"";
 				DEVELOPMENT_TEAM = G72BPQSG2L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

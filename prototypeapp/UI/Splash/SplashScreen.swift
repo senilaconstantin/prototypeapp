@@ -25,7 +25,7 @@ struct SplashScreen: View {
     
     @ViewBuilder private var content: some View {
         ZStack {
-            Color.green.ignoresSafeArea(edges: .all)
+//            Color.green.ignoresSafeArea(edges: .all)
             switch viewModel.viewType {
             case .navigateToDashboard:
                 navigateToDashboard

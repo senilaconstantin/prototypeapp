@@ -9,7 +9,20 @@ import SwiftUI
 
 struct SplashView: View {
     var body: some View {
-        Text("Hello, Splash!")
+        ZStack {
+            GeometryReader { geometry in
+                Image("splashScreen")
+                    .resizable()
+                    .edgesIgnoringSafeArea(.all)
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: geometry.size.width, height: geometry.size.height)
+            }
+            
+            VStack(alignment: .center) {
+                Text("FitPlan")
+                    .cardTextStyle(font: Font.timesNewRomanBold35(), color: Color.white)
+            }
+        }
     }
 }
 

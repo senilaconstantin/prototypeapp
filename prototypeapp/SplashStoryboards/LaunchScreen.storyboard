@@ -17,16 +17,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="splashAssets" translatesAutoresizingMaskIntoConstraints="NO" id="YhY-t6-F1U">
-                                <rect key="frame" x="1" y="0.0" width="392" height="852"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashScreen" translatesAutoresizingMaskIntoConstraints="NO" id="YhY-t6-F1U">
+                                <rect key="frame" x="-5" y="0.0" width="402" height="852"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YhY-t6-F1U" secondAttribute="height" multiplier="67:142" id="YGA-ua-eHE"/>
+                                    <constraint firstAttribute="width" secondItem="YhY-t6-F1U" secondAttribute="height" multiplier="67:142" id="a7p-vm-zy5"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bZC-AO-0wZ"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
+                            <constraint firstItem="YhY-t6-F1U" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-1" id="1KF-6R-4X2"/>
                             <constraint firstItem="YhY-t6-F1U" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Ocw-KT-4ma"/>
                             <constraint firstItem="YhY-t6-F1U" firstAttribute="leading" secondItem="bZC-AO-0wZ" secondAttribute="leading" constant="1" id="QvG-yQ-i4n"/>
                             <constraint firstItem="YhY-t6-F1U" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Rfq-ku-aKo"/>
+                            <constraint firstAttribute="trailing" secondItem="YhY-t6-F1U" secondAttribute="trailing" constant="-1" id="rTW-8D-Gze"/>
                             <constraint firstItem="YhY-t6-F1U" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-59" id="tK3-rr-ZSk"/>
                         </constraints>
                     </view>
@@ -37,7 +43,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splashAssets" width="250" height="541.33331298828125"/>
+        <image name="splashScreen" width="250" height="541.33331298828125"/>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

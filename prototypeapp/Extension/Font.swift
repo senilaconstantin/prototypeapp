@@ -16,6 +16,9 @@ extension Font {
     static func verdan50() -> Font {
         Font.custom("Verdana", size: 50)
     }
+    static func verdan45() -> Font {
+        Font.custom("Verdana", size: 45)
+    }
     
     static func verdan30() -> Font {
         Font.custom("Verdana", size: 30)
@@ -27,6 +30,10 @@ extension Font {
     
     static func verdan20() -> Font {
         Font.custom("Verdana", size: 20)
+    }
+    
+    static func verdan15() -> Font {
+        Font.custom("Verdana", size: 15)
     }
     
     static func timesNewRoman35() -> Font {

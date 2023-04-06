@@ -8,17 +8,23 @@
 import SwiftUI
 
 struct WelcomeView: View {
-    @State var page: Int = 0
+    @State var pageView: TypeScreenStart = .welcome
+    @EnvironmentObject var viewModel: SplashViewModel
     
     var body: some View {
-//        ZStack {
-        if page == 0 {
+        switch pageView {
+        case .welcome:
             content
-        } else {
-            ContentView()
+        case .welcome2:
+             WelcomeView2(pageView: $pageView)
+                .environmentObject(viewModel)
+        case .login:
+            LoginView(pageView: $pageView)
+                .environmentObject(viewModel)
+        case .register:
+            RegisterView(pageView: $pageView)
+                .environmentObject(viewModel)
         }
-            
-//        }
     }
     
     @ViewBuilder private var content: some View {
@@ -43,7 +49,7 @@ struct WelcomeView: View {
                     HStack {
                         Spacer()
                         Button {
-                            self.page = 1
+                            self.pageView = .welcome2
                         } label: {
                             Text("NEXT")
                                 .cardTextStyle(font: Font.verdan20(), color: Color.white)

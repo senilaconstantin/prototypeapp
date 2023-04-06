@@ -10,14 +10,22 @@ import SwiftUI
 struct DashboardView: View {
     @EnvironmentObject var viewModel: SplashViewModel
     var body: some View {
-        Color.blue.ignoresSafeArea()
-        Text("LogOut!")
-            .onTapGesture {
-                // logout
-                CurrentUser.shared.logout()
-                viewModel.viewType = .navigateToLogin
-                // ----
+        ZStack {
+            GeometryReader { geometry in
+                Image("dashboardScreen")
+                    .resizable()
+                    .edgesIgnoringSafeArea(.all)
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: geometry.size.width, height: geometry.size.height)
             }
+            Text("LogOut!")
+                .onTapGesture {
+                    // logout
+                    CurrentUser.shared.logout()
+                    viewModel.viewType = .navigateToLogin
+                    // ----
+                }
+        }
     }
 }
 

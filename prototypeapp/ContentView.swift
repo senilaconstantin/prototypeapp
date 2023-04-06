@@ -17,7 +17,7 @@ struct ContentView: View {
                     .imageScale(.large)
                     .foregroundColor(.accentColor)
                     .onTapGesture {
-                        let log: LogInModel = .init(password: "1234", email: "costy@gmail.com")
+                        let log: LogInModel = .init(email: "costy@gmail.com", password: "1234")
                         APIClient.shared.login(model: log) { data in
                             if let resultData = data {
                                 guard let decodedData = try? JSONDecoder().decode(TokenModel.self, from: resultData) else {

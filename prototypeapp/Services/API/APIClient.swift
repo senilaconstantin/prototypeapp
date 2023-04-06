@@ -10,6 +10,10 @@ import Foundation
 class APIClient {
     static var shared = APIClient()
     
+    func setToken(token: TokenModel) {
+        CurrentUser.shared.saveToken(tokenModel: token)
+    }
+    
     func login(model: LogInModel, responseLogIn: @escaping (_ data: Data?) -> Void) {
         let urlString = "\(ApiConstants.basePath)\(ApiConstants.URLEndpoint.login)"
        
@@ -32,6 +36,28 @@ class APIClient {
                     print(err.localizedDescription)
                     responseLogIn(nil)
                 }
+            }
+        }
+    }
+    
+    func loginUser(email: String,
+                   password: String,
+                   completionHandler: @escaping (_ tokenModel: TokenModel?, _ error: ErrorModel?) -> Void) {
+        let model: LogInModel = .init(email: email, password: password)
+        APIClient.shared.login(model: model) { data in
+            if let data = data {
+                guard let result = try? JSONDecoder().decode(TokenModel.self, from: data) else {
+                    completionHandler(nil, .decodingError)
+                    return
+                }
+                DispatchQueue.main.async {
+                    print(result)
+                    let tokenModel = TokenModel(token: result.token)
+                    APIClient.shared.setToken(token: tokenModel)
+                    completionHandler(tokenModel, nil)
+                }
+            } else {
+                completionHandler(nil, .wrongCredentials)
             }
         }
     }

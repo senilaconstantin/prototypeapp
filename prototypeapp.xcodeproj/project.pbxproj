@@ -47,6 +47,8 @@
 		F5B0593929DEBD4C004879F0 /* DividerViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0593829DEBD4C004879F0 /* DividerViewModifier.swift */; };
 		F5B0593B29DEBE09004879F0 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0593A29DEBE09004879F0 /* SecureTextField.swift */; };
 		F5B0593D29DEBF14004879F0 /* SecureInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0593C29DEBF14004879F0 /* SecureInputView.swift */; };
+		F5B0594029DEED4C004879F0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0593F29DEED4C004879F0 /* LoginViewModel.swift */; };
+		F5B0594329DEF0A4004879F0 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0594229DEF0A4004879F0 /* ErrorModel.swift */; };
 		F5E927D829DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */; };
 		F5E927D929DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */; };
 		F5E927DA29DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */; };
@@ -115,6 +117,8 @@
 		F5B0593829DEBD4C004879F0 /* DividerViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerViewModifier.swift; sourceTree = "<group>"; };
 		F5B0593A29DEBE09004879F0 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
 		F5B0593C29DEBF14004879F0 /* SecureInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureInputView.swift; sourceTree = "<group>"; };
+		F5B0593F29DEED4C004879F0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F5B0594229DEF0A4004879F0 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,6 +201,7 @@
 		7D3F91A429C0DB04005FCA56 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F5B0594129DEF087004879F0 /* Error */,
 				F5B0593029DEAF84004879F0 /* Register */,
 				F5B0592729DE8BC8004879F0 /* Login */,
 				F55386AB29DCCF14006EC47A /* ViewModifiers */,
@@ -347,6 +352,7 @@
 		F5B0592729DE8BC8004879F0 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				F5B0593E29DEED31004879F0 /* ViewModel */,
 				F5B0592D29DEAD5F004879F0 /* Model */,
 				F5B0592829DE8BFD004879F0 /* View */,
 			);
@@ -388,6 +394,22 @@
 				F5B0593229DEB0C7004879F0 /* RegisterView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F5B0593E29DEED31004879F0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5B0593F29DEED4C004879F0 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F5B0594129DEF087004879F0 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				F5B0594229DEF0A4004879F0 /* ErrorModel.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -643,11 +665,13 @@
 				F5B0593929DEBD4C004879F0 /* DividerViewModifier.swift in Sources */,
 				7D3F91C229C73BB4005FCA56 /* BaseView.swift in Sources */,
 				7D3F91A729C10A01005FCA56 /* SplashScreen.swift in Sources */,
+				F5B0594029DEED4C004879F0 /* LoginViewModel.swift in Sources */,
 				7D3F91AB29C10A55005FCA56 /* SplashViewModel.swift in Sources */,
 				F5B0593529DEB5C6004879F0 /* LoginView.swift in Sources */,
 				7D3F919B29BFC1D7005FCA56 /* LogInModel.swift in Sources */,
 				7D3F91C429C74449005FCA56 /* TypeView.swift in Sources */,
 				7D60CACB29642BAF00CE38A3 /* ContentView.swift in Sources */,
+				F5B0594329DEF0A4004879F0 /* ErrorModel.swift in Sources */,
 				7D60CAC929642BAF00CE38A3 /* prototypeappApp.swift in Sources */,
 				F5B0593D29DEBF14004879F0 /* SecureInputView.swift in Sources */,
 				7D3F91BD29C73849005FCA56 /* DashboardView.swift in Sources */,

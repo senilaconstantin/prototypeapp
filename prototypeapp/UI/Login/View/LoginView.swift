@@ -12,9 +12,10 @@ struct LoginView: View {
     @Binding var pageView: TypeScreenStart
     @State var email: String = ""
     @State var password: String = ""
-    
+    @StateObject var loginVM: LoginViewModel = .init()
+
     var body: some View {
-        ZStack {
+        BaseView(viewModel: loginVM) {
             GeometryReader { geometry in
                 Image("loginScreen")
                     .resizable()
@@ -23,15 +24,26 @@ struct LoginView: View {
                     .frame(width: geometry.size.width, height: geometry.size.height)
             }
             VStack(spacing: 20) {
+                Spacer()
                 Text("LOGIN")
                     .cardTextStyle(font: Font.verdan45(), color: Color.gray)
                     .padding(.bottom, 20)
                 AppTextField(textHeader: "Email", text: $email)
-                
+
                 SecureTextField(textHeader: "Password", password: $password)
-                
+
                 Button {
-                    viewModel.viewType = .navigateToDashboard
+                    loginVM.loginUser(email: email, password: password) { tokenModel, error in
+                        DispatchQueue.main.async {
+                            if let tokenModel = tokenModel {
+//                                print("---\(tokenModel)") // TODO: delete
+                                viewModel.viewType = .navigateToDashboard
+                            } else if let error = error {
+                                loginVM.errorMessage = error
+//                                print("---\(error)")
+                            }
+                        }
+                    }
                 } label: {
                     HStack {
                         Spacer()
@@ -43,7 +55,16 @@ struct LoginView: View {
                     .background(Color.black)
                     .cornerRadius(30)
                 }
-                
+
+                Spacer()
+
+                Button {
+                    pageView = .register
+                } label: {
+                    Text("Sign up")
+                        .cardTextStyle(font: Font.verdan20(), color: Color.blue)
+                        .padding(.bottom, 20)
+                }
             }.padding([.leading, .trailing], 40)
         }
     }

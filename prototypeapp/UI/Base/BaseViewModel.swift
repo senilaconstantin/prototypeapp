@@ -14,5 +14,5 @@ class BaseViewModel: ObservableObject {
     
     func resetErrorMessage() {
         errorMessage = nil
-    }    
+    }
 }

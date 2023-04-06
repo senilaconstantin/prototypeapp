@@ -13,8 +13,32 @@ extension Font {
         Font.custom("Verdana-Italic", size: 33)
     }
     
+    static func verdan50() -> Font {
+        Font.custom("Verdana", size: 50)
+    }
+    
+    static func verdan30() -> Font {
+        Font.custom("Verdana", size: 30)
+    }
+    
+    static func verdan35() -> Font {
+        Font.custom("Verdana", size: 35)
+    }
+    
+    static func verdan20() -> Font {
+        Font.custom("Verdana", size: 20)
+    }
+    
     static func timesNewRoman35() -> Font {
         Font.custom("TimesNewRomanPSMT", size: 35)
+    }
+    
+    static func timesNewRoman60() -> Font {
+        Font.custom("TimesNewRomanPSMT", size: 60)
+    }
+    
+    static func timesNewRoman45() -> Font {
+        Font.custom("TimesNewRomanPSMT", size: 45)
     }
     
     static func timesNewRomanBold35() -> Font {
@@ -23,6 +47,10 @@ extension Font {
     
     static func timesNewRomanItalic35() -> Font {
         Font.custom("TimesNewRomanPS-ItalicMT", size: 35)
+    }
+    
+    static func timesNewRomanItalic40() -> Font {
+        Font.custom("TimesNewRomanPS-ItalicMT", size: 40)
     }
     
     static func timesNewRomanBoldItalic35() -> Font {

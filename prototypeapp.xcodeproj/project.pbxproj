@@ -38,6 +38,7 @@
 		F56EA92429DE222900E66493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56EA92329DE222800E66493 /* Assets.xcassets */; };
 		F56EA92529DE222900E66493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56EA92329DE222800E66493 /* Assets.xcassets */; };
 		F56EA92629DE222900E66493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56EA92329DE222800E66493 /* Assets.xcassets */; };
+		F5B0592A29DE8C15004879F0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0592929DE8C15004879F0 /* WelcomeView.swift */; };
 		F5E927D829DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */; };
 		F5E927D929DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */; };
 		F5E927DA29DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */; };
@@ -97,6 +98,7 @@
 		F55386B629DCD9C6006EC47A /* Fasthand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fasthand-Regular.ttf"; sourceTree = "<group>"; };
 		F55386B829DCDC16006EC47A /* Times New Romance.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Times New Romance.ttf"; path = "../../../../../Downloads/times_new_romance2/Times New Romance.ttf"; sourceTree = "<group>"; };
 		F56EA92329DE222800E66493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5B0592929DE8C15004879F0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,6 +181,7 @@
 		7D3F91A429C0DB04005FCA56 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F5B0592729DE8BC8004879F0 /* Login */,
 				F55386AB29DCCF14006EC47A /* ViewModifiers */,
 				7D3F91BE29C73A11005FCA56 /* Base */,
 				7D3F91BB29C73825005FCA56 /* Dashboard */,
@@ -321,6 +324,22 @@
 				F55386AC29DCCF32006EC47A /* CardTextViewModifier.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		F5B0592729DE8BC8004879F0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F5B0592829DE8BFD004879F0 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F5B0592829DE8BFD004879F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5B0592929DE8C15004879F0 /* WelcomeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -581,6 +600,7 @@
 				7D3F91BD29C73849005FCA56 /* DashboardView.swift in Sources */,
 				7DE5898B29D6A3BA0075ECC7 /* IncercareDeSters.swift in Sources */,
 				F55386AD29DCCF32006EC47A /* CardTextViewModifier.swift in Sources */,
+				F5B0592A29DE8C15004879F0 /* WelcomeView.swift in Sources */,
 				F553867C29DCC596006EC47A /* Font.swift in Sources */,
 				7D3F919629BFC0A5005FCA56 /* APIClient.swift in Sources */,
 				7D3F91C729C74954005FCA56 /* CurrentUser.swift in Sources */,

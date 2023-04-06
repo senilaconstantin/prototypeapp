@@ -50,7 +50,7 @@ struct SplashScreen: View {
     }
     
     private var navigateToLogin: some View {
-        ContentView()
+        WelcomeView()
             .environmentObject(viewModel)
     }
 }

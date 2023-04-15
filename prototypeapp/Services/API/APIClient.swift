@@ -16,11 +16,11 @@ class APIClient {
     
     func login(model: LogInModel, responseLogIn: @escaping (_ data: Data?) -> Void) {
         let urlString = "\(ApiConstants.basePath)\(ApiConstants.URLEndpoint.login)"
-       
+        
         let headers: HTTPHeaders = [
             .contentType("application/json")
         ]
-
+        
         AF.request(urlString,
                    method: .post,
                    parameters: model,
@@ -58,6 +58,93 @@ class APIClient {
                 }
             } else {
                 completionHandler(nil, .wrongCredentials)
+            }
+        }
+    }
+    
+    func register(model: RegisterModelPost, registerResponse: @escaping (_ data: Data?) -> Void) {
+        let urlString = "\(ApiConstants.basePath)\(ApiConstants.URLEndpoint.register)"
+        let headers: HTTPHeaders = [
+            .contentType("application/json")
+        ]
+        
+        AF.request(urlString,
+                   method: .post,
+                   parameters: model,
+                   encoder: JSONParameterEncoder.default,
+                   headers: headers)
+        .response { response in
+            debugPrint(response)
+            DispatchQueue.main.async {
+                switch response.result {
+                case .success(let data):
+                    registerResponse(data)
+                case .failure(let err):
+                    print(err.localizedDescription)
+                    registerResponse(nil)
+                }
+            }
+        }
+    }
+    
+    func registerUser(model: RegisterModelPost, completionHandler: @escaping (_ tokenModel: TokenModel?, _ error: ErrorModel?) -> Void) {
+        APIClient.shared.register(model: model) { result in
+            if let data = result {
+                guard let result = try? JSONDecoder().decode(TokenModel.self, from: data) else {
+                    completionHandler(nil, .decodingError)
+                    return
+                }
+                DispatchQueue.main.async {
+                    print(result)
+                    let tokenModel = TokenModel(token: result.token)
+                    APIClient.shared.setToken(token: tokenModel)
+                    completionHandler(tokenModel, nil)
+                }
+            } else {
+                completionHandler(nil, .registerError)
+            }
+        }
+        
+    }
+    
+    func getUserDetails(token: TokenModel, userResponse: @escaping (_ data: Data?) -> Void) {
+        let urlString = "\(ApiConstants.basePath)\(ApiConstants.URLEndpoint.userDetails)"
+        guard let url = URL(string: urlString) else {
+            print("url found nil")
+            return
+        }
+        print(urlString)
+        let accessToken = token.token // token is type TokenModel
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.addValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
+        
+        print(accessToken as Any)
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil, let response = response as? HTTPURLResponse,
+                  response.statusCode >= 200, response.statusCode < 300
+            else {
+                userResponse(nil)
+                print("Response Error!")
+                return
+            }
+            userResponse(data)
+        }
+        .resume()
+    }
+    
+    func getUserDetailsData(token: TokenModel, userResponse: @escaping (_ data: UserDetails?) -> Void) {
+        getUserDetails(token: token) { data in
+            DispatchQueue.main.async {
+                if let data = data {
+                    guard let result = try? JSONDecoder().decode(UserDetails.self, from: data) else {
+                        userResponse(nil)
+                        return
+                    }
+                    userResponse(result)
+                } else {
+                    userResponse(nil)
+                }
             }
         }
     }

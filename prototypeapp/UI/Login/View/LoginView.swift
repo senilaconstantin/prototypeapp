@@ -36,7 +36,7 @@ struct LoginView: View {
                     loginVM.loginUser(email: email, password: password) { tokenModel, error in
                         DispatchQueue.main.async {
                             if let tokenModel = tokenModel {
-//                                print("---\(tokenModel)") // TODO: delete
+                                print("---\(tokenModel)") // TODO: delete
                                 viewModel.viewType = .navigateToDashboard
                             } else if let error = error {
                                 loginVM.errorMessage = error
@@ -65,7 +65,8 @@ struct LoginView: View {
                         .cardTextStyle(font: Font.verdan20(), color: Color.blue)
                         .padding(.bottom, 20)
                 }
-            }.padding([.leading, .trailing], 40)
+            }
+            .padding([.leading, .trailing], AppConstants.General.paddingLR)
         }
     }
 }

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct DashboardView: View {
     @EnvironmentObject var viewModel: SplashViewModel
+    @StateObject var dashboardVM: DashboardViewModel = .init()
+    
     var body: some View {
         ZStack {
             GeometryReader { geometry in
@@ -18,13 +20,18 @@ struct DashboardView: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(width: geometry.size.width, height: geometry.size.height)
             }
-            Text("LogOut!")
-                .onTapGesture {
-                    // logout
-                    CurrentUser.shared.logout()
-                    viewModel.viewType = .navigateToLogin
-                    // ----
-                }
+            VStack {
+                Text("LogOut!")
+                    .cardTextStyle(font: Font.verdan35(), color: Color.blue)
+                    .onTapGesture {
+                        // logout
+                        CurrentUser.shared.logout()
+                        viewModel.viewType = .navigateToLogin
+                        // ----
+                    }
+                Text("\(dashboardVM.userDetails.firstName) \(dashboardVM.userDetails.lastName)")
+                    .cardTextStyle(font: Font.verdan25(), color: Color.black)
+            }
         }
     }
 }

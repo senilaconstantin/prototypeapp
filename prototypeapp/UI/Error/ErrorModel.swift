@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum ErrorModel {
-    case wrongCredentials, decodingError
+    case wrongCredentials, decodingError, registerError
     
     var description: String {
             switch self {
@@ -16,6 +16,8 @@ enum ErrorModel {
                 return "Wrong Credentials!"
             case .decodingError:
                 return "Data decoding error!"
+            case .registerError:
+                return "Register error!"
             }
         }
 }

@@ -49,6 +49,16 @@
 		F5B0593D29DEBF14004879F0 /* SecureInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0593C29DEBF14004879F0 /* SecureInputView.swift */; };
 		F5B0594029DEED4C004879F0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0593F29DEED4C004879F0 /* LoginViewModel.swift */; };
 		F5B0594329DEF0A4004879F0 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0594229DEF0A4004879F0 /* ErrorModel.swift */; };
+		F5B0594929E01A86004879F0 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0594829E01A86004879F0 /* RegisterViewModel.swift */; };
+		F5B0594C29E01E7B004879F0 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0594B29E01E7B004879F0 /* AppConstants.swift */; };
+		F5C3418329E93CF1006E491D /* ButtonSex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3418229E93CF1006E491D /* ButtonSex.swift */; };
+		F5C3418529E93D42006E491D /* SexType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3418429E93D42006E491D /* SexType.swift */; };
+		F5C3418729E94716006E491D /* ButtonGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3418629E94715006E491D /* ButtonGoal.swift */; };
+		F5C3418929E9475D006E491D /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3418829E9475D006E491D /* GoalType.swift */; };
+		F5C3418B29E950D7006E491D /* RegisterModelPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3418A29E950D7006E491D /* RegisterModelPost.swift */; };
+		F5C3419029E966D9006E491D /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3418F29E966D9006E491D /* UserDetails.swift */; };
+		F5C3419229E96898006E491D /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3419129E96898006E491D /* DashboardViewModel.swift */; };
+		F5C3419529E9D303006E491D /* HealthDataRead.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C3419429E9D303006E491D /* HealthDataRead.swift */; };
 		F5E927D829DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */; };
 		F5E927D929DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */; };
 		F5E927DA29DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */; };
@@ -119,6 +129,17 @@
 		F5B0593C29DEBF14004879F0 /* SecureInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureInputView.swift; sourceTree = "<group>"; };
 		F5B0593F29DEED4C004879F0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F5B0594229DEF0A4004879F0 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		F5B0594829E01A86004879F0 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		F5B0594B29E01E7B004879F0 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		F5C3418229E93CF1006E491D /* ButtonSex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSex.swift; sourceTree = "<group>"; };
+		F5C3418429E93D42006E491D /* SexType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexType.swift; sourceTree = "<group>"; };
+		F5C3418629E94715006E491D /* ButtonGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGoal.swift; sourceTree = "<group>"; };
+		F5C3418829E9475D006E491D /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
+		F5C3418A29E950D7006E491D /* RegisterModelPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModelPost.swift; sourceTree = "<group>"; };
+		F5C3418F29E966D9006E491D /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
+		F5C3419129E96898006E491D /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		F5C3419429E9D303006E491D /* HealthDataRead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataRead.swift; sourceTree = "<group>"; };
+		F5C3419829E9E0CB006E491D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -226,7 +247,9 @@
 		7D3F91BB29C73825005FCA56 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				7D3F91BC29C73849005FCA56 /* DashboardView.swift */,
+				F5C3418E29E966C6006E491D /* Model */,
+				F5C3418D29E966BD006E491D /* ViewModel */,
+				F5C3418C29E966AB006E491D /* View */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -273,6 +296,8 @@
 		7D60CAC729642BAF00CE38A3 /* prototypeapp */ = {
 			isa = PBXGroup;
 			children = (
+				F5C3419329E9D2E0006E491D /* Health */,
+				F5B0594A29E01E61004879F0 /* Constants */,
 				F553867D29DCC9DB006EC47A /* Fonts */,
 				F553867A29DCC56C006EC47A /* Extension */,
 				7D3F91C529C748FE005FCA56 /* Utils */,
@@ -290,6 +315,7 @@
 		7D60CACE29642BB000CE38A3 /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				F5C3419829E9E0CB006E491D /* Info.plist */,
 				7D60CAF229642FB100CE38A3 /* GoogleService-Info.plist */,
 				F56EA92329DE222800E66493 /* Assets.xcassets */,
 			);
@@ -383,6 +409,8 @@
 		F5B0593029DEAF84004879F0 /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				F5B0594729E01A52004879F0 /* ViewModel */,
+				F5B0594629E01A48004879F0 /* Model */,
 				F5B0593129DEAFC2004879F0 /* View */,
 			);
 			path = Register;
@@ -392,6 +420,8 @@
 			isa = PBXGroup;
 			children = (
 				F5B0593229DEB0C7004879F0 /* RegisterView.swift */,
+				F5C3418229E93CF1006E491D /* ButtonSex.swift */,
+				F5C3418629E94715006E491D /* ButtonGoal.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -410,6 +440,64 @@
 				F5B0594229DEF0A4004879F0 /* ErrorModel.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		F5B0594629E01A48004879F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5C3418429E93D42006E491D /* SexType.swift */,
+				F5C3418829E9475D006E491D /* GoalType.swift */,
+				F5C3418A29E950D7006E491D /* RegisterModelPost.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5B0594729E01A52004879F0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5B0594829E01A86004879F0 /* RegisterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F5B0594A29E01E61004879F0 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F5B0594B29E01E7B004879F0 /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F5C3418C29E966AB006E491D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D3F91BC29C73849005FCA56 /* DashboardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5C3418D29E966BD006E491D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5C3419129E96898006E491D /* DashboardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F5C3418E29E966C6006E491D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5C3418F29E966D9006E491D /* UserDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5C3419329E9D2E0006E491D /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				F5C3419429E9D303006E491D /* HealthDataRead.swift */,
+			);
+			path = Health;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -662,7 +750,9 @@
 				F5B0592C29DEA6DC004879F0 /* WelcomeView2.swift in Sources */,
 				F5B0593329DEB0C7004879F0 /* RegisterView.swift in Sources */,
 				7D3F919929BFC181005FCA56 /* APIConstants.swift in Sources */,
+				F5B0594C29E01E7B004879F0 /* AppConstants.swift in Sources */,
 				F5B0593929DEBD4C004879F0 /* DividerViewModifier.swift in Sources */,
+				F5C3418729E94716006E491D /* ButtonGoal.swift in Sources */,
 				7D3F91C229C73BB4005FCA56 /* BaseView.swift in Sources */,
 				7D3F91A729C10A01005FCA56 /* SplashScreen.swift in Sources */,
 				F5B0594029DEED4C004879F0 /* LoginViewModel.swift in Sources */,
@@ -670,19 +760,27 @@
 				F5B0593529DEB5C6004879F0 /* LoginView.swift in Sources */,
 				7D3F919B29BFC1D7005FCA56 /* LogInModel.swift in Sources */,
 				7D3F91C429C74449005FCA56 /* TypeView.swift in Sources */,
+				F5C3419529E9D303006E491D /* HealthDataRead.swift in Sources */,
 				7D60CACB29642BAF00CE38A3 /* ContentView.swift in Sources */,
 				F5B0594329DEF0A4004879F0 /* ErrorModel.swift in Sources */,
 				7D60CAC929642BAF00CE38A3 /* prototypeappApp.swift in Sources */,
 				F5B0593D29DEBF14004879F0 /* SecureInputView.swift in Sources */,
+				F5C3418B29E950D7006E491D /* RegisterModelPost.swift in Sources */,
 				7D3F91BD29C73849005FCA56 /* DashboardView.swift in Sources */,
+				F5C3418929E9475D006E491D /* GoalType.swift in Sources */,
+				F5C3419229E96898006E491D /* DashboardViewModel.swift in Sources */,
+				F5C3418329E93CF1006E491D /* ButtonSex.swift in Sources */,
 				F5B0592F29DEAD7B004879F0 /* TypeScreenStart.swift in Sources */,
 				7DE5898B29D6A3BA0075ECC7 /* IncercareDeSters.swift in Sources */,
 				F55386AD29DCCF32006EC47A /* CardTextViewModifier.swift in Sources */,
 				F5B0592A29DE8C15004879F0 /* WelcomeView.swift in Sources */,
 				F553867C29DCC596006EC47A /* Font.swift in Sources */,
 				7D3F919629BFC0A5005FCA56 /* APIClient.swift in Sources */,
+				F5C3419029E966D9006E491D /* UserDetails.swift in Sources */,
+				F5C3418529E93D42006E491D /* SexType.swift in Sources */,
 				F5B0593B29DEBE09004879F0 /* SecureTextField.swift in Sources */,
 				7D3F91C729C74954005FCA56 /* CurrentUser.swift in Sources */,
+				F5B0594929E01A86004879F0 /* RegisterViewModel.swift in Sources */,
 				7D3F91A929C10A1B005FCA56 /* SplashView.swift in Sources */,
 				F5B0593729DEBA72004879F0 /* AppTextField.swift in Sources */,
 			);
@@ -844,6 +942,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = prototypeapp/prototypeapp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -851,6 +950,7 @@
 				DEVELOPMENT_TEAM = G72BPQSG2L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = prototypeapp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Health&Sports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -880,6 +980,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = prototypeapp/prototypeapp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -887,6 +988,7 @@
 				DEVELOPMENT_TEAM = G72BPQSG2L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = prototypeapp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Health&Sports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

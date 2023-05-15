@@ -9,10 +9,12 @@ import SwiftUI
 
 struct DashboardView: View {
     @EnvironmentObject var viewModel: SplashViewModel
-    @StateObject var dashboardVM: DashboardViewModel = .init()
+    @EnvironmentObject var dashboardVM: DashboardViewModel
+    @State var cardSelected: DashboardCardModelPost = .init(uuid: "", cardType: "", name: "", description: "", date: "", statusType: "")
+    @State private var isCardSelected = false
     
     var body: some View {
-        ZStack {
+        BaseView(viewModel: dashboardVM) {
             GeometryReader { geometry in
                 Image("dashboardScreen")
                     .resizable()
@@ -20,18 +22,30 @@ struct DashboardView: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(width: geometry.size.width, height: geometry.size.height)
             }
-            VStack {
-                Text("LogOut!")
-                    .cardTextStyle(font: Font.verdan35(), color: Color.blue)
-                    .onTapGesture {
-                        // logout
-                        CurrentUser.shared.logout()
-                        viewModel.viewType = .navigateToLogin
-                        // ----
+//                        .offset(y: -50)
+            VStack(spacing: 20) {
+                Spacer()
+                CardUserView(user: $dashboardVM.userDetails)
+                    
+                Spacer()
+                
+                VStack {
+                    ScrollView(showsIndicators: false) {
+                        VStack(alignment: .leading) {
+                            ForEach(dashboardVM.listCard.indices, id: \.self) { index in
+                                CardView(card: $dashboardVM.listCard[index])
+                                    .onTapGesture {
+                                        cardSelected = dashboardVM.listCard[index]
+                                        isCardSelected = true
+                                    }
+                            }
+                        }
                     }
-                Text("\(dashboardVM.userDetails.firstName) \(dashboardVM.userDetails.lastName)")
-                    .cardTextStyle(font: Font.verdan25(), color: Color.black)
+                }
+                .padding([.top], 40)
             }
+            .padding([.top], 20)
+            .padding([.bottom], 1)
         }
     }
 }

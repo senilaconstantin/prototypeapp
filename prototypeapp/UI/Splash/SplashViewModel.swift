@@ -18,12 +18,23 @@ class SplashViewModel: BaseViewModel {
     }
     
     private func handleNavigationFlow() {
-        if CurrentUser.shared.isLoggedIn() {
-            navigateToDashboard = true
-            viewType = .navigateToDashboard
-        } else {
-            navigateToLogin = true
-            viewType = .navigateToLogin
+        CurrentUser.shared.isLoggedIn { data in
+            DispatchQueue.main.async {
+                if data {
+                    self.navigateToDashboard = true
+                    self.viewType = .navigateToDashboard
+                } else {
+                    self.navigateToLogin = true
+                    self.viewType = .navigateToLogin
+                }
+            }
         }
+//        if CurrentUser.shared.isLoggedIn() {
+//            navigateToDashboard = true
+//            viewType = .navigateToDashboard
+//        } else {
+//            navigateToLogin = true
+//            viewType = .navigateToLogin
+//        }
     }
 }

@@ -45,7 +45,8 @@ struct SplashScreen: View {
     }
     
     @ViewBuilder private var navigateToDashboard: some View {
-        DashboardView()
+//        DashboardView()
+        TabBarView(color: Color.primaryViolet)
             .environmentObject(viewModel)
     }
     

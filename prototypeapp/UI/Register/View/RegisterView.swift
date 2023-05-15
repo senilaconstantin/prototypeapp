@@ -110,15 +110,24 @@ struct RegisterView: View {
                         Spacer()
                         Text("KG")
                             .frame(width: 50, height: 25)
+                            .foregroundColor(Color.black)
                             .overlay(RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.gray, lineWidth: 1))
                     }
-                    TextField("Weight", text: $weight)
-                        .multilineTextAlignment(.center)
-                        .font(.largeTitle)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .background(Color.white)
-                        .edgesIgnoringSafeArea(.all)
+                    ZStack {
+                        Text("Weight")
+                            .foregroundColor(Color.gray)
+                            .opacity(weight == "" ? 1 : 0)
+                        TextField("", text: $weight)
+                            .foregroundColor(Color.black)
+                        
+                    }
+                    .multilineTextAlignment(.center)
+                    .font(.largeTitle)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color.white)
+                    .edgesIgnoringSafeArea(.all)
+                    
                     
                     Spacer()
                 }

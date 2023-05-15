@@ -9,11 +9,27 @@ import SwiftUI
 
 class DashboardViewModel: BaseViewModel {
     @Published var userDetails: UserDetails = .init(uuid: nil, firstName: "", lastName: "", sex: "", goal: "", weight: 0.0)
+    @Published var listCard: [DashboardCardModelPost] = [DashboardCardModelPost]()
     
     override init() {
         super.init()
         DispatchQueue.main.async {
             self.reloadDetails()
+            self.reloadCards()
+        }
+    }
+    
+    func reloadCards() {
+        APIClient.shared.getDashboardsCardsData(token: CurrentUser.shared.getToken()) { data in
+            DispatchQueue.main.async {
+                if let cards = data {
+                    cards.forEach { card in
+                        let cardDashboard = DashboardCardModelPost.init(card: card)
+                        self.listCard.append(cardDashboard)
+                        print("----card: \(cardDashboard.description)")
+                    }
+                }
+            }
         }
     }
     
@@ -36,14 +52,14 @@ class DashboardViewModel: BaseViewModel {
         }
         
         ////
-//        HealthDataRead.shared.requestAuthorization()
-//        
-//        HealthDataRead.shared.getCaloriesBurned { calories in
-//            print("---\(calories)")
-//        }
-//        HealthDataRead.shared.getDistanceWalkingRunning()
-//        HealthDataRead.shared.readRestingEnergy()
-//        HealthDataRead.shared.readSteps()
+        //        HealthDataRead.shared.requestAuthorization()
+        //
+        //        HealthDataRead.shared.getCaloriesBurned { calories in
+        //            print("---\(calories)")
+        //        }
+        //        HealthDataRead.shared.getDistanceWalkingRunning()
+        //        HealthDataRead.shared.readRestingEnergy()
+        //        HealthDataRead.shared.readSteps()
         
         ////
     }

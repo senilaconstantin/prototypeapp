@@ -6,6 +6,7 @@
 //
 import Alamofire
 import Foundation
+import UIKit
 
 class APIClient {
     static var shared = APIClient()
@@ -107,6 +108,89 @@ class APIClient {
         
     }
     
+    func checkPulse(token: TokenModel, checkPulseResponse: @escaping (_ data: Data?) -> Void) {
+        let urlString = "\(ApiConstants.basePath)\(ApiConstants.URLEndpoint.checkPulse)"
+        guard let url = URL(string: urlString) else {
+            print("url found nil")
+            return
+        }
+        let accessToken = token.token // token is type TokenModel
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            guard data != nil, error == nil, let response = response as? HTTPURLResponse,
+                  response.statusCode >= 200, response.statusCode < 300
+            else {
+                checkPulseResponse(nil)
+                print("Response Error!")
+                return
+            }
+            checkPulseResponse(data)
+        }
+        .resume()
+    }
+    
+    func checkPulseData(token: TokenModel, pulseResponse: @escaping (_ data: PulseModel?) -> Void) {
+        checkPulse(token: token) { data in
+            DispatchQueue.main.async {
+                if let data = data {
+                    guard let result = try? JSONDecoder().decode(PulseModel.self, from: data) else {
+                        pulseResponse(nil)
+                        return
+                    }
+                    pulseResponse(result)
+                } else {
+                    pulseResponse(nil)
+                }
+            }
+        }
+    }
+    
+    func getDashboardsCards(token: TokenModel, responseCard: @escaping (_ data: Data?) -> Void) {
+        let dateString = Date.convertStringFromDate(date: Date.getCurrentDate())
+        let urlString = "\(ApiConstants.basePath)\(ApiConstants.URLEndpoint.getAllCardsUser)?date=\(dateString)"
+        guard let url = URL(string: urlString) else {
+            print("url found nil")
+            return
+        }
+        print(urlString)
+        let accessToken = token.token // token is type TokenModel
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.addValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
+        
+        print(accessToken as Any)
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil, let response = response as? HTTPURLResponse,
+                  response.statusCode >= 200, response.statusCode < 300
+            else {
+                responseCard(nil)
+                print("Response Error getDashboardCards!")
+                return
+            }
+            responseCard(data)
+        }
+        .resume()
+    }
+    
+    func getDashboardsCardsData(token: TokenModel, responseCard: @escaping (_ data: [DashboardCardModel]?) -> Void) {
+        getDashboardsCards(token: token) { data in
+            if let dataR = data {
+                guard let result = try? JSONDecoder().decode([DashboardCardModel].self, from: dataR) else {
+                    responseCard(nil)
+                    return
+                }
+                responseCard(result)
+            } else {
+                responseCard(nil)
+            }
+            
+        }
+    }
+    
     func getUserDetails(token: TokenModel, userResponse: @escaping (_ data: Data?) -> Void) {
         let urlString = "\(ApiConstants.basePath)\(ApiConstants.URLEndpoint.userDetails)"
         guard let url = URL(string: urlString) else {
@@ -147,6 +231,31 @@ class APIClient {
                 }
             }
         }
+    }
+    
+    func deleteAccount(token: TokenModel, checkDeleteResponse: @escaping (_ isOk: Bool) -> Void) {
+        let urlString = "\(ApiConstants.basePath)\(ApiConstants.URLEndpoint.deleteAccount)"
+        guard let url = URL(string: urlString) else {
+            print("url found nil")
+            return
+        }
+        let accessToken = token.token // token is type TokenModel
+        var request = URLRequest(url: url)
+        request.httpMethod = "DELETE"
+        request.addValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            guard data != nil, error == nil, let response = response as? HTTPURLResponse,
+                  response.statusCode >= 200, response.statusCode < 300
+            else {
+                checkDeleteResponse(false)
+                print("Response Error!")
+                return
+            }
+            checkDeleteResponse(true)
+        }
+        .resume()
     }
 }
 

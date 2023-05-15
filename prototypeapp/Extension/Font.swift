@@ -9,6 +9,9 @@ import SwiftUI
 
 extension Font {
     // Font names = = [["Verdana", "Verdana-Italic", "Verdana-Bold",
+    static func verdanBold20() -> Font {
+        Font.custom("Verdana-Bold", size: 20)
+    }
     static func verdanItalic33() -> Font {
         Font.custom("Verdana-Italic", size: 33)
     }
@@ -69,6 +72,16 @@ extension Font {
     }
     
 }
+
+// TODO: aici e codul care afiseaza Font-urile
+//for familyName in UIFont.familyNames {
+//print (familyName)
+//for fontName in UIFont.fontNames (forFamilyName:
+//                                    familyName) {
+//    print("_- \(fontName ) ")
+//}
+//}
+// TODO: 
 
 //--------
 //Font Family name -> [Avenir]

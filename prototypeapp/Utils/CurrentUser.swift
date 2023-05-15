@@ -11,15 +11,27 @@ class CurrentUser {
     static let shared = CurrentUser()
     private let defaults = UserDefaults.standard
     
-    func isLoggedIn() -> Bool {
-        var tokenR: TokenModel = .init(token: "")
+    func isLoggedIn(isLoggedInResponse: @escaping (_ data: Bool) -> Void) {
+        //        var tokenR: TokenModel = .init(token: "")
         if let savedData = defaults.object(forKey: "token") as? Data {
             let decoder = JSONDecoder()
             if let token = try? decoder.decode(TokenModel.self, from: savedData) {
-                tokenR = token
+                
+                APIClient.shared.getUserDetailsData(token: token) { data in
+                    DispatchQueue.main.async {
+                        if let _ = data {
+                            isLoggedInResponse(true)
+                        } else {
+                            print("nu e valid Token-ul")
+                            self.logout()
+                            isLoggedInResponse(false)
+                        }
+                    }
+                }
+                
             }
         }
-        return tokenR.token != ""
+        //        return tokenR.token != ""
     }
     
     func getToken() -> TokenModel {

@@ -35,7 +35,6 @@
 		F53E02A12A02855100AE60FC /* PulseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53E02A02A02855100AE60FC /* PulseView.swift */; };
 		F53E02A32A02857A00AE60FC /* MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53E02A22A02857A00AE60FC /* MyProfileView.swift */; };
 		F53E02A52A029EEC00AE60FC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53E02A42A029EEC00AE60FC /* Color.swift */; };
-		F53E02A72A02F4DC00AE60FC /* PulseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53E02A62A02F4DC00AE60FC /* PulseModel.swift */; };
 		F54A24382A08DF1100B08FD5 /* Times New Romance.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F54A24372A08DF1100B08FD5 /* Times New Romance.ttf */; };
 		F553867C29DCC596006EC47A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = F553867B29DCC596006EC47A /* Font.swift */; };
 		F55386AD29DCCF32006EC47A /* CardTextViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55386AC29DCCF32006EC47A /* CardTextViewModifier.swift */; };
@@ -80,6 +79,7 @@
 		F5E2F3B92A12578A0067760C /* StatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2F3B82A12578A0067760C /* StatusType.swift */; };
 		F5E2F3BB2A125BD60067760C /* DashboardCardModelPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2F3BA2A125BD60067760C /* DashboardCardModelPost.swift */; };
 		F5E2F3BD2A1262140067760C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2F3BC2A1262140067760C /* Date.swift */; };
+		F5E2F3BF2A12C0080067760C /* PulseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2F3BE2A12C0080067760C /* PulseModel.swift */; };
 		F5E927D829DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */; };
 		F5E927D929DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */; };
 		F5E927DA29DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */; };
@@ -140,7 +140,6 @@
 		F53E02A02A02855100AE60FC /* PulseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseView.swift; sourceTree = "<group>"; };
 		F53E02A22A02857A00AE60FC /* MyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileView.swift; sourceTree = "<group>"; };
 		F53E02A42A029EEC00AE60FC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		F53E02A62A02F4DC00AE60FC /* PulseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseModel.swift; sourceTree = "<group>"; };
 		F54A24372A08DF1100B08FD5 /* Times New Romance.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Times New Romance.ttf"; sourceTree = "<group>"; };
 		F553867B29DCC596006EC47A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		F55386AC29DCCF32006EC47A /* CardTextViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTextViewModifier.swift; sourceTree = "<group>"; };
@@ -182,6 +181,7 @@
 		F5E2F3B82A12578A0067760C /* StatusType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusType.swift; sourceTree = "<group>"; };
 		F5E2F3BA2A125BD60067760C /* DashboardCardModelPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCardModelPost.swift; sourceTree = "<group>"; };
 		F5E2F3BC2A1262140067760C /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		F5E2F3BE2A12C0080067760C /* PulseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseModel.swift; sourceTree = "<group>"; };
 		F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -622,7 +622,7 @@
 		F5E2F3A32A10FA470067760C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F53E02A62A02F4DC00AE60FC /* PulseModel.swift */,
+				F5E2F3BE2A12C0080067760C /* PulseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -897,6 +897,7 @@
 				F53E029D2A0241FA00AE60FC /* ItemTabBar.swift in Sources */,
 				F5B0593929DEBD4C004879F0 /* DividerViewModifier.swift in Sources */,
 				F5E2F3AF2A12217A0067760C /* SuccesResponse.swift in Sources */,
+				F5E2F3BF2A12C0080067760C /* PulseModel.swift in Sources */,
 				F5C3418729E94716006E491D /* ButtonGoal.swift in Sources */,
 				7D3F91C229C73BB4005FCA56 /* BaseView.swift in Sources */,
 				7D3F91A729C10A01005FCA56 /* SplashScreen.swift in Sources */,
@@ -946,7 +947,6 @@
 				7D3F91A929C10A1B005FCA56 /* SplashView.swift in Sources */,
 				F5E2F3B32A1226DF0067760C /* CardUserView.swift in Sources */,
 				F5B0593729DEBA72004879F0 /* AppTextField.swift in Sources */,
-				F53E02A72A02F4DC00AE60FC /* PulseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

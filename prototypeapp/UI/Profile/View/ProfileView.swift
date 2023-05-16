@@ -27,8 +27,13 @@ struct ProfileView: View {
                     .frame(width: geometry.size.width, height: geometry.size.height)
             }
             
-            VStack(spacing: 30) {
-                Spacer()
+            VStack(alignment: .leading, spacing: 30) {
+                Text("User: \(dashboardVM.userDetails.firstName) \(dashboardVM.userDetails.lastName)")
+                    .cardTextStyle(font: Font.verdan15(), color: Color.white)
+                    .padding([.top], 20)
+                Text("MY GOAL")
+                    .cardTextStyle(font: Font.verdan25(), color: Color.white)
+//                Spacer()
                 CardUserView(user: $dashboardVM.userDetails)
                     
                 Spacer()

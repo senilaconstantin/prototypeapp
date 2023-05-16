@@ -20,16 +20,19 @@ class DashboardViewModel: BaseViewModel {
     }
     
     func reloadCards() {
+//        showLoading = true
+        listCard = []
         APIClient.shared.getDashboardsCardsData(token: CurrentUser.shared.getToken()) { data in
             DispatchQueue.main.async {
                 if let cards = data {
                     cards.forEach { card in
                         let cardDashboard = DashboardCardModelPost.init(card: card)
                         self.listCard.append(cardDashboard)
-                        print("----card: \(cardDashboard.description)")
                     }
                 }
+                self.showLoading = false
             }
+            
         }
     }
     
@@ -62,5 +65,20 @@ class DashboardViewModel: BaseViewModel {
         //        HealthDataRead.shared.readSteps()
         
         ////
+    }
+    
+    func updateCard(card: DashboardCardModelPost) {
+        showLoading = true
+        APIClient.shared.updateCard(token: CurrentUser.shared.getToken(), card: card) { error in
+            DispatchQueue.main.async {
+                if let _ = error {
+                    self.errorMessage = "The card could not be updated!"
+                }
+//                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    self.reloadCards()
+//                }
+            }
+            
+        }
     }
 }

@@ -14,20 +14,18 @@ struct TabBarView: View {
     var color: Color
     @State var textsNameBar: [String] = ["Home", "Pulse", "Profile"]
     @State var iconsBar: [String] = ["homekit", "bolt.heart", "person.crop.circle"]
+    @State var isCardSelected: Bool = false
     
     var body: some View {
         ZStack {
             VStack() {
                 TabView(selection: $selected) {
-                    //                ItemTabBar(nameImage: "homekit", titleName: "Home", color: Color.yellow)
-                    DashboardView()
+                    DashboardView(isCardSelected: $isCardSelected)
                         .environmentObject(viewModel)
                         .environmentObject(dashboardVM)
                         .tag("Home")
-                    //                ItemTabBar(nameImage: "bolt.heart", titleName: "Pulse", color: Color.yellow)
                     PulseView()
                         .tag("Pulse")
-//                    ItemTabBar(nameImage: "person.crop.circle", titleName: "Profile", color: Color.yellow)
                     ProfileView()
                         .environmentObject(viewModel)
                         .environmentObject(dashboardVM)
@@ -39,7 +37,7 @@ struct TabBarView: View {
                 Spacer()
                 ZStack {
                     color
-                        .cornerRadius(40, corners: [.topLeft, .topRight])
+                        .cornerRadius(30, corners: [.topLeft, .topRight])
                         .edgesIgnoringSafeArea(.bottom)
 //                        .frame(width: UIScreen.main.bounds.size.width, height: 60)
                         .ignoresSafeArea(.all)
@@ -60,6 +58,7 @@ struct TabBarView: View {
                 }
                 .frame(width: UIScreen.main.bounds.size.width, height: 40)
             }
+            .opacity(isCardSelected ? 0: 1)
         }
         
     }

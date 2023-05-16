@@ -19,19 +19,15 @@ struct CardView: View {
                     .scaledToFit()
                     .foregroundColor(Color.white)
                 
-//                Spacer()
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 10) {
                     Text(card.name)
                         .cardTextStyle(font: Font.verdanBold20(), color: Color.white)
-//                        .padding([.trailing], 10)
-                    Spacer()
                     
                     Text("\(card.description)")
                         .cardTextStyle(font: Font.verdan15(), color: Color.white)
-//                        .padding([.trailing], 10)
-                    
-                    
-                }.padding([.top, .bottom])
+                }
+                .padding([.top, .bottom])
+                .padding([.trailing], 10)
                 
                 Spacer()
                 
@@ -39,7 +35,7 @@ struct CardView: View {
             .padding([.leading, .trailing])
         }
         .background(card.statusType == .Done ? Color.green.cornerRadius(15) : Color.colorToDoCard.cornerRadius(15))
-        .padding([.leading, .trailing], 20)
+//        .padding([.leading, .trailing], 20)
         //        .cornerRadius(15)
         
     }

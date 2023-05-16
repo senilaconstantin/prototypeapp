@@ -80,6 +80,8 @@
 		F5E2F3BB2A125BD60067760C /* DashboardCardModelPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2F3BA2A125BD60067760C /* DashboardCardModelPost.swift */; };
 		F5E2F3BD2A1262140067760C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2F3BC2A1262140067760C /* Date.swift */; };
 		F5E2F3BF2A12C0080067760C /* PulseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2F3BE2A12C0080067760C /* PulseModel.swift */; };
+		F5E2F3C12A1377D30067760C /* CardSelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2F3C02A1377D30067760C /* CardSelectedView.swift */; };
+		F5E2F3C32A137D300067760C /* PickerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2F3C22A137D300067760C /* PickerButtonView.swift */; };
 		F5E927D829DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */; };
 		F5E927D929DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */; };
 		F5E927DA29DE299C004A5CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */; };
@@ -182,6 +184,8 @@
 		F5E2F3BA2A125BD60067760C /* DashboardCardModelPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCardModelPost.swift; sourceTree = "<group>"; };
 		F5E2F3BC2A1262140067760C /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		F5E2F3BE2A12C0080067760C /* PulseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseModel.swift; sourceTree = "<group>"; };
+		F5E2F3C02A1377D30067760C /* CardSelectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectedView.swift; sourceTree = "<group>"; };
+		F5E2F3C22A137D300067760C /* PickerButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerButtonView.swift; sourceTree = "<group>"; };
 		F5E927D729DE299C004A5CA1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -525,6 +529,8 @@
 				F53E029C2A0241FA00AE60FC /* ItemTabBar.swift */,
 				F53E02A22A02857A00AE60FC /* MyProfileView.swift */,
 				F5E2F3B02A1224F00067760C /* CardView.swift */,
+				F5E2F3C02A1377D30067760C /* CardSelectedView.swift */,
+				F5E2F3C22A137D300067760C /* PickerButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -898,6 +904,7 @@
 				F5B0593929DEBD4C004879F0 /* DividerViewModifier.swift in Sources */,
 				F5E2F3AF2A12217A0067760C /* SuccesResponse.swift in Sources */,
 				F5E2F3BF2A12C0080067760C /* PulseModel.swift in Sources */,
+				F5E2F3C32A137D300067760C /* PickerButtonView.swift in Sources */,
 				F5C3418729E94716006E491D /* ButtonGoal.swift in Sources */,
 				7D3F91C229C73BB4005FCA56 /* BaseView.swift in Sources */,
 				7D3F91A729C10A01005FCA56 /* SplashScreen.swift in Sources */,
@@ -919,6 +926,7 @@
 				F5B0594329DEF0A4004879F0 /* ErrorModel.swift in Sources */,
 				F5E2F39F2A10F2530067760C /* ProfileViewModel.swift in Sources */,
 				7D60CAC929642BAF00CE38A3 /* prototypeappApp.swift in Sources */,
+				F5E2F3C12A1377D30067760C /* CardSelectedView.swift in Sources */,
 				F5B0593D29DEBF14004879F0 /* SecureInputView.swift in Sources */,
 				F53E029F2A02443F00AE60FC /* CustomCornerRadius.swift in Sources */,
 				F5C3418B29E950D7006E491D /* RegisterModelPost.swift in Sources */,

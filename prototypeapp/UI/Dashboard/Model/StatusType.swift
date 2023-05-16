@@ -30,5 +30,31 @@ public enum StatusType {
             return .none
         }
     }
+    
+    func stringForCaseThis() -> String {
+        switch self {
+        case .ToDo:
+            return "ToDo"
+        case .Done:
+            return "Done"
+        case .none:
+            return ""
+        }
+    }
+    
+    static func caseForStringThis(_ string: String) -> StatusType {
+        switch string {
+        case "ToDo":
+            return .ToDo
+        case "Done":
+            return .Done
+        default:
+            return .none
+        }
+    }
+    
+    static func getSTringList() -> [String] {
+        return ["ToDo", "Done"]
+    }
 }
 

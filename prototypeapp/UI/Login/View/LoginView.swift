@@ -36,11 +36,9 @@ struct LoginView: View {
                     loginVM.loginUser(email: email, password: password) { tokenModel, error in
                         DispatchQueue.main.async {
                             if let tokenModel = tokenModel {
-                                print("---\(tokenModel)") // TODO: delete
                                 viewModel.viewType = .navigateToDashboard
                             } else if let error = error {
                                 loginVM.errorMessage = error
-//                                print("---\(error)")
                             }
                         }
                     }

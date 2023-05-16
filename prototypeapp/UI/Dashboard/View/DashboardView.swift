@@ -11,7 +11,7 @@ struct DashboardView: View {
     @EnvironmentObject var viewModel: SplashViewModel
     @EnvironmentObject var dashboardVM: DashboardViewModel
     @State var cardSelected: DashboardCardModelPost = .init(uuid: "", cardType: "", name: "", description: "", date: "", statusType: "")
-    @State private var isCardSelected = false
+    @Binding var isCardSelected: Bool
     
     var body: some View {
         BaseView(viewModel: dashboardVM) {
@@ -22,11 +22,15 @@ struct DashboardView: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(width: geometry.size.width, height: geometry.size.height)
             }
-//                        .offset(y: -50)
-            VStack(spacing: 20) {
-                Spacer()
+            VStack(alignment: .leading, spacing: 20) {
+                Text("Welcome, \(dashboardVM.userDetails.firstName) \(dashboardVM.userDetails.lastName)")
+                    .cardTextStyle(font: Font.verdan15(), color: Color.white)
+                    .padding([.top], 20)
+                Text("MY GOAL")
+                    .cardTextStyle(font: Font.verdan25(), color: Color.white)
+                
                 CardUserView(user: $dashboardVM.userDetails)
-                    
+                
                 Spacer()
                 
                 VStack {
@@ -39,19 +43,24 @@ struct DashboardView: View {
                                         isCardSelected = true
                                     }
                             }
+                            
                         }
                     }
                 }
-                .padding([.top], 40)
+                .padding([.top], -30)
             }
-            .padding([.top], 20)
+            .padding([.leading, .trailing], 20)
+            //            .padding([.top], 20)
             .padding([.bottom], 1)
+            CardSelectedView(card: $cardSelected, isShowing: $isCardSelected)
+                .environmentObject(dashboardVM)
         }
+        
     }
 }
 
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
-        DashboardView()
+        DashboardView(isCardSelected: .constant(false))
     }
 }

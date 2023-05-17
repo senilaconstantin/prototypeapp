@@ -14,6 +14,11 @@ struct AppConstants {
         static let width: CGFloat = UIScreen.main.bounds.size.width
     }
     
+    enum Pulse {
+        static let smallPulseOk: Float = 40.0
+        static let highPulseOk: Float = 70.0
+    }
+    
     enum General {
         static let paddingLR: CGFloat = 40
     }

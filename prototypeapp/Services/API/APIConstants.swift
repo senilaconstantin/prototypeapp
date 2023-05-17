@@ -26,5 +26,6 @@ class ApiConstants {
         static let deleteAccount = "/user/delete"
         static let getAllCardsUser = "/card/get"
         static let updateCardUser = "/card/"
+        static let addCardUser = "/card/"
     }
 }

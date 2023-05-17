@@ -43,7 +43,8 @@ struct DashboardView: View {
                                         isCardSelected = true
                                     }
                             }
-                            
+                            Spacer()
+                                .frame(height: 20)
                         }
                     }
                 }
@@ -55,7 +56,6 @@ struct DashboardView: View {
             CardSelectedView(card: $cardSelected, isShowing: $isCardSelected)
                 .environmentObject(dashboardVM)
         }
-        
     }
 }
 

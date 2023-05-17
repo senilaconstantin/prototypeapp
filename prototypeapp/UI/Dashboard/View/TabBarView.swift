@@ -15,21 +15,26 @@ struct TabBarView: View {
     @State var textsNameBar: [String] = ["Home", "Pulse", "Profile"]
     @State var iconsBar: [String] = ["homekit", "bolt.heart", "person.crop.circle"]
     @State var isCardSelected: Bool = false
+    @State var isShow: Bool = false
     
     var body: some View {
         ZStack {
-            VStack() {
+            VStack {
                 TabView(selection: $selected) {
-                    DashboardView(isCardSelected: $isCardSelected)
-                        .environmentObject(viewModel)
-                        .environmentObject(dashboardVM)
-                        .tag("Home")
-                    PulseView()
-                        .tag("Pulse")
-                    ProfileView()
-                        .environmentObject(viewModel)
-                        .environmentObject(dashboardVM)
-                        .tag("Profile")
+                    if selected == "Home" {
+                        DashboardView(isCardSelected: $isCardSelected)
+                            .environmentObject(viewModel)
+                            .environmentObject(dashboardVM)
+                            .tag("Home")
+                    } else if selected == "Pulse" {
+                        PulseView(isPulse: $isCardSelected)
+                            .tag("Pulse")
+                    } else if selected == "Profile" {
+                        ProfileView(isShowing: $isShow)
+                            .environmentObject(viewModel)
+                            .environmentObject(dashboardVM)
+                            .tag("Profile")
+                    }
                 }
             }
             
@@ -39,18 +44,24 @@ struct TabBarView: View {
                     color
                         .cornerRadius(30, corners: [.topLeft, .topRight])
                         .edgesIgnoringSafeArea(.bottom)
-//                        .frame(width: UIScreen.main.bounds.size.width, height: 60)
+                    //                        .frame(width: UIScreen.main.bounds.size.width, height: 60)
                         .ignoresSafeArea(.all)
                         .shadow(color: Color.black, radius: 10)
                     
                     HStack(alignment: .top, spacing: 40) {
                         ForEach(0..<3) { index in
                             Button(action: {
-                                selected = textsNameBar[index]
+                                if !isCardSelected {
+                                    selected = textsNameBar[index]
+                                    if selected == "Home" {
+                                        dashboardVM.reloadCards()
+                                    }
+                                }
                             }) {
                                 ItemTabBar(nameImage: iconsBar[index], titleName: textsNameBar[index], color: selected == textsNameBar[index] ? .green : .gray)
                                     .padding(.top, 5)
                             }
+                            .disabled(isCardSelected || isShow)
                             .offset(y: selected == textsNameBar[index] ? -10 : 0)
                         }
                     }
@@ -59,8 +70,8 @@ struct TabBarView: View {
                 .frame(width: UIScreen.main.bounds.size.width, height: 40)
             }
             .opacity(isCardSelected ? 0: 1)
+            
         }
-        
     }
 }
 

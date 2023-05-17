@@ -144,6 +144,41 @@ class APIClient {
         .resume()
     }
     
+    func addCard(token: TokenModel, card: DashboardCardModelPost, responseCard: @escaping (_ error: Error?) -> Void) {
+        let body: [String: Any] = ["cardType": card.cardType.stringForCase(),
+                                   "name": card.name,
+                                   "description": card.description,
+                                   "date": Date.convertStringFromDate(date: card.date),
+                                   "statusType": card.statusType.stringForCase()]
+        let jsonData = try? JSONSerialization.data(withJSONObject: body)
+        let urlString = "\(ApiConstants.basePath)\(ApiConstants.URLEndpoint.addCardUser)"
+        guard let url = URL(string: urlString) else {
+            print("url found nil")
+            return
+        }
+        
+        let accessToken = token.token // token is type TokenModel
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
+        
+        request.setValue("\(String(describing: jsonData?.count))", forHTTPHeaderField: "Content-Length")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = jsonData
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            guard data != nil, error == nil, let response = response as? HTTPURLResponse,
+                  response.statusCode >= 200, response.statusCode < 300
+            else {
+                responseCard(error)
+                print("Response Error!")
+                return
+            }
+            responseCard(nil)
+        }
+        .resume()
+    }
+    
     func checkPulse(token: TokenModel, checkPulseResponse: @escaping (_ data: Data?) -> Void) {
         let urlString = "\(ApiConstants.basePath)\(ApiConstants.URLEndpoint.checkPulse)"
         guard let url = URL(string: urlString) else {

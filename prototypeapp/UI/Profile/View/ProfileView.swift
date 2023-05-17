@@ -11,10 +11,14 @@ struct ProfileView: View {
     @EnvironmentObject var viewModel: SplashViewModel
     @EnvironmentObject var dashboardVM: DashboardViewModel
     @StateObject var profileVM: ProfileViewModel = .init()
-    @State var isShowing: Bool = false
+    
     @State var text: String = ""
     @State var actionProfileType: ActionProfileType = .none
     @State var response: Bool = false
+    
+    @Binding var isShowing: Bool //= false
+    
+//    @Binding var isNotShow: Bool
     
     var body: some View {
         BaseView(viewModel: profileVM) {
@@ -33,9 +37,9 @@ struct ProfileView: View {
                     .padding([.top], 20)
                 Text("MY GOAL")
                     .cardTextStyle(font: Font.verdan25(), color: Color.white)
-//                Spacer()
+                //                Spacer()
                 CardUserView(user: $dashboardVM.userDetails)
-                    
+                
                 Spacer()
                 Spacer()
                 
@@ -80,8 +84,8 @@ struct ProfileView: View {
     }
 }
 
-struct ProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileView()
-    }
-}
+//struct ProfileView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ProfileView()
+//    }
+//}

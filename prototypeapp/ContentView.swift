@@ -23,9 +23,10 @@ struct ContentView: View {
                                 guard let decodedData = try? JSONDecoder().decode(TokenModel.self, from: resultData) else {
                                     return
                                 }
-                                print("---\(decodedData.token)")
+                                print("---\(decodedData.access_token)")
                                 
-                                CurrentUser.shared.saveToken(tokenModel: TokenModel.init(token: decodedData.token))
+                                CurrentUser.shared.saveToken(tokenModel: TokenModel.init(access_token: decodedData.access_token,
+                                                                                         refresh_token: decodedData.refresh_token))
                                 viewModel.checkStatus()
                                 
                             } else {

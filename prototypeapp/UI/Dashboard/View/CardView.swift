@@ -34,7 +34,7 @@ struct CardView: View {
             }
             .padding([.leading, .trailing])
         }
-        .background(card.statusType == .Done ? Color.green.cornerRadius(15) : Color.colorToDoCard.cornerRadius(15))
+        .background(card.statusType == .Done ? Color.colorDoneCard.cornerRadius(15) : Color.colorToDoCard.cornerRadius(15))
 //        .padding([.leading, .trailing], 20)
         //        .cornerRadius(15)
         

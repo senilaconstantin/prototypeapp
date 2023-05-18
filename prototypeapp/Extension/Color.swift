@@ -13,5 +13,6 @@ extension Color {
     // MARK: solid colors
     static let primaryViolet = Color("violet")
     static let colorToDoCard = Color("cardToDo")
+    static let colorDoneCard = Color("cardDone")
     
 }

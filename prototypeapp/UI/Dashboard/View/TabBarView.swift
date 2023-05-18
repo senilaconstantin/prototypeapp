@@ -58,7 +58,7 @@ struct TabBarView: View {
                                     }
                                 }
                             }) {
-                                ItemTabBar(nameImage: iconsBar[index], titleName: textsNameBar[index], color: selected == textsNameBar[index] ? .green : .gray)
+                                ItemTabBar(nameImage: iconsBar[index], titleName: textsNameBar[index], color: selected == textsNameBar[index] ? .colorDoneCard : .gray)
                                     .padding(.top, 5)
                             }
                             .disabled(isCardSelected || isShow)

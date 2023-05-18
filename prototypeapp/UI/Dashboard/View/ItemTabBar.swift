@@ -24,6 +24,9 @@ struct ItemTabBar: View {
                 
             VStack {
                 Image(systemName: nameImage)
+//                    .resizable()
+//                    .frame(width: 30, height: 30)
+////                    .scaledToFit()
                     .foregroundColor(color) // Color.primaryGreen // Color.black
                 Text(titleName)
                     .cardTextStyle(font: Font.verdan15(), color: color)

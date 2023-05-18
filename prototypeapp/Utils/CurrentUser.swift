@@ -30,12 +30,14 @@ class CurrentUser {
                 }
                 
             }
+        } else {
+            isLoggedInResponse(false)
         }
         //        return tokenR.token != ""
     }
     
     func getToken() -> TokenModel {
-        var tokenR: TokenModel = .init(token: "")
+        var tokenR: TokenModel = .init(access_token: "", refresh_token: "")
         if let savedData = defaults.object(forKey: "token") as? Data {
             let decoder = JSONDecoder()
             if let token = try? decoder.decode(TokenModel.self, from: savedData) {
@@ -55,7 +57,7 @@ class CurrentUser {
     }
     
     func logout() {
-        let token = TokenModel(token: "")
+        let token = TokenModel(access_token: "", refresh_token: "")
         let encoder = JSONEncoder()
         if let encodedData = try? encoder.encode(token) {
             defaults.set(encodedData, forKey: "token")

@@ -8,9 +8,11 @@
 import Foundation
 
 struct TokenModel: Codable {
-    var token: String
-
-    init(token: String) {
-        self.token = token
+    var access_token: String
+    var refresh_token: String
+    
+    init(access_token: String, refresh_token: String) {
+        self.access_token = access_token
+        self.refresh_token = refresh_token
     }
 }

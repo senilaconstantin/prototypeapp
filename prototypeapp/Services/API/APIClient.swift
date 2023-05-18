@@ -53,7 +53,7 @@ class APIClient {
                 }
                 DispatchQueue.main.async {
                     print(result)
-                    let tokenModel = TokenModel(token: result.token)
+                    let tokenModel = TokenModel(access_token: result.access_token, refresh_token: result.refresh_token)
                     APIClient.shared.setToken(token: tokenModel)
                     completionHandler(tokenModel, nil)
                 }
@@ -97,7 +97,7 @@ class APIClient {
                 }
                 DispatchQueue.main.async {
                     print(result)
-                    let tokenModel = TokenModel(token: result.token)
+                    let tokenModel = TokenModel(access_token: result.access_token, refresh_token: result.refresh_token)
                     APIClient.shared.setToken(token: tokenModel)
                     completionHandler(tokenModel, nil)
                 }
@@ -122,7 +122,7 @@ class APIClient {
             return
         }
         
-        let accessToken = token.token // token is type TokenModel
+        let accessToken = token.access_token // token is type TokenModel
         var request = URLRequest(url: url)
         request.httpMethod = "PUT"
         request.addValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
@@ -157,7 +157,7 @@ class APIClient {
             return
         }
         
-        let accessToken = token.token // token is type TokenModel
+        let accessToken = token.access_token // token is type TokenModel
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.addValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
@@ -185,7 +185,7 @@ class APIClient {
             print("url found nil")
             return
         }
-        let accessToken = token.token // token is type TokenModel
+        let accessToken = token.access_token // token is type TokenModel
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.addValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
@@ -228,7 +228,7 @@ class APIClient {
             return
         }
         print(urlString)
-        let accessToken = token.token // token is type TokenModel
+        let accessToken = token.access_token // token is type TokenModel
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.addValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
@@ -269,7 +269,7 @@ class APIClient {
             return
         }
         print(urlString)
-        let accessToken = token.token // token is type TokenModel
+        let accessToken = token.access_token// token is type TokenModel
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.addValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
@@ -310,7 +310,7 @@ class APIClient {
             print("url found nil")
             return
         }
-        let accessToken = token.token // token is type TokenModel
+        let accessToken = token.access_token // token is type TokenModel
         var request = URLRequest(url: url)
         request.httpMethod = "DELETE"
         request.addValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")

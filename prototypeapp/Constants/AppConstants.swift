@@ -15,8 +15,8 @@ struct AppConstants {
     }
     
     enum Pulse {
-        static let smallPulseOk: Float = 40.0
-        static let highPulseOk: Float = 70.0
+        static let smallPulseOk: Float = 60.0
+        static let highPulseOk: Float = 100.0
     }
     
     enum General {

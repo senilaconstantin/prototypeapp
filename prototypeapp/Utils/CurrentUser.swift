@@ -22,6 +22,7 @@ class CurrentUser {
                         if let _ = data {
                             isLoggedInResponse(true)
                         } else {
+                            // TODO: aici se verifica daca refreshToken-ul este valid printr-un apel de refreshToken la backend, daca totul e ok se sterge vechiul token si se salveaza noul token, iar daca nu se trimite false user-ul fiind nevoit sa se logheze din nou
                             print("nu e valid Token-ul")
                             self.logout()
                             isLoggedInResponse(false)
@@ -29,6 +30,8 @@ class CurrentUser {
                     }
                 }
                 
+            } else {
+                isLoggedInResponse(false)
             }
         } else {
             isLoggedInResponse(false)

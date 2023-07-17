@@ -11,7 +11,6 @@ class PulseViewModel: BaseViewModel {
     
     func setCardPulse(pulse: Float) {
         showLoading = true
-        print("-- a ajuns la puls")
         let card: DashboardCardModelPost = .init(uuid: "",
                                                  cardType: "HEALTH",
                                                  name: "",

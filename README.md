@@ -17,8 +17,7 @@ The app leverages modern iOS development tools to ensure a smooth and responsive
 
 ![14EF9274-102F-4602-ACDD-68AA6B32F2E7_1_105_c](https://github.com/user-attachments/assets/a44cff23-5a37-4a07-8f61-7a737eb923a2)
 
-<iframe width="560" height="315" src="https://youtube.com/shorts/456uogp4eRI" frameborder="0" allowfullscreen></iframe>
-
+[Watch the video on YouTube](https://youtube.com/shorts/456uogp4eRI)
 
 ---
 

@@ -110,3 +110,5 @@ The app uses `UserDefaults` for lightweight and secure storage of essential user
 Example:
 ```swift
 UserDefaults.standard.set("somePreference", forKey: "userPreference")
+
+[![Watch the video](https://img.youtube.com/vi/_5tFXJQIzi4/0.jpg)](https://www.youtube.com/watch?v=_5tFXJQIzi4)

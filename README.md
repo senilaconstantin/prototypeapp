@@ -1,4 +1,4 @@
-# Health & Fitness Mobile Application
+![E89DBE89-FDBA-438C-965B-67B13A0973B8_1_102_a](https://github.com/user-attachments/assets/48cb6ffd-702f-4fc2-a7fc-fbd7a8fc0c58)# Health & Fitness Mobile Application
 
 ## Overview
 
@@ -16,6 +16,8 @@ The app leverages modern iOS development tools to ensure a smooth and responsive
 - **SwiftUI Interface:** A sleek and modern design built with SwiftUI to ensure optimal usability and performance.
 
 ![14EF9274-102F-4602-ACDD-68AA6B32F2E7_1_105_c](https://github.com/user-attachments/assets/a44cff23-5a37-4a07-8f61-7a737eb923a2)
+
+![Watch video](https://youtube.com/shorts/456uogp4eRI)
 
 
 ---
@@ -111,6 +113,3 @@ Example:
 ```swift
 UserDefaults.standard.set("somePreference", forKey: "userPreference")
 ```
-
-![[Watch the video](![E89DBE89-FDBA-438C-965B-67B13A0973B8_1_102_a](https://github.com/user-attachments/assets/1c780bbc-0130-4522-9b97-d5ca57b2108a)
-)]([https://www.youtube.com/watch?v=_5tFXJQIzi4](https://youtube.com/shorts/456uogp4eRI?feature=share))

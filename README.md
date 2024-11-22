@@ -111,6 +111,6 @@ Example:
 ```swift
 UserDefaults.standard.set("somePreference", forKey: "userPreference")
 ```
-![F171C2A3-F471-458A-A965-32246A114E4F_1_106_c](https://github.com/user-attachments/assets/c71176b5-e06c-4b40-9a89-17f2a9bb8cfe)
 
-![[Watch the video](https://img.youtube.com/vi/_5tFXJQIzi4/0.jpg)]([https://www.youtube.com/watch?v=_5tFXJQIzi4](https://youtube.com/shorts/456uogp4eRI?feature=share))
+![[Watch the video](![E89DBE89-FDBA-438C-965B-67B13A0973B8_1_102_a](https://github.com/user-attachments/assets/1c780bbc-0130-4522-9b97-d5ca57b2108a)
+)]([https://www.youtube.com/watch?v=_5tFXJQIzi4](https://youtube.com/shorts/456uogp4eRI?feature=share))

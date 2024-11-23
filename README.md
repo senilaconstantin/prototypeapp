@@ -19,6 +19,8 @@ The app leverages modern iOS development tools to ensure a smooth and responsive
 
 [Watch the video on YouTube](https://youtube.com/shorts/456uogp4eRI)
 
+[Watch pulse measurement on YouTube](https://youtube.com/shorts/dd_DWLKMfmg?feature=share)
+
 ---
 
 ## Technologies Used
